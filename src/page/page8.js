@@ -5,6 +5,7 @@ import Page22 from "../images/page22.png";
 import { Menu3 } from "../components/menu3";
 import { ExportImg, TxtBottom } from "./page5";
 import Export from "../images/export.png";
+import Home from "../images/homepage.svg";
 
 const Bg7 = styled.div`
     width: 100%;
@@ -51,12 +52,13 @@ export const Page8 = () => {
         {
             id:4,
             txt1:'소스코드:',
-            txt2:'https://github.com/eunyyi/main'
+            txt2:'https://github.com/eunyyi/eunyyi.github.io'
+            // txt3:'https://github.com/eunyyi/eunyyi.github.io'
         },
         {
             id:5,
             txt1:'배포링크:',
-            txt2:'http://eunyi-developer.com/경원재/'
+            txt2:'https://eunyyi.github.io/'
         }
     ]
     return(
@@ -70,6 +72,7 @@ export const Page8 = () => {
                         txtCons.map((el)=><div className="row">
                             <p style={{fontSize:'20px', marginRight:'10px'}}>{el.txt1}</p>
                             <p style={{fontSize:'20px'}}>{el.txt2}</p>
+                            <p style={{fontSize:'20px'}}>{el.txt3}</p>
                         </div>)
                     }
                 </TxtDiv>
@@ -77,7 +80,9 @@ export const Page8 = () => {
                     <MonitorImg src={Page22}/>
                 </div>
             </Cons>
-            <ExportImg src={Export} style={{top:'730px', right:'945px'}} 
+            <ExportImg src={Export} style={{top:'660px', left:'780px'}} 
+                onClick={()=>window.open("https://github.com/eunyyi/eunyyi.github.io","_black")}/>
+            <ExportImg src={Home} style={{width:'40px',top:'730px', left:'625px'}} 
                 onClick={()=>window.open("https://eunyyi.github.io/","_black")}/>
         </Bg7>
     );

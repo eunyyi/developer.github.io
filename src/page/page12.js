@@ -4,6 +4,7 @@ import { Txt } from "./page4";
 import Monitor from "../images/monitor.png";
 import Page122 from "../images/page12.png";
 import Export from "../images/export.png";
+import Home from "../images/homepage.svg";
 import { Menu5 } from "../components/menu5";
 import { ExportImg, TxtBottom } from "./page5";
 
@@ -54,12 +55,12 @@ export const Page12 = () => {
         {
             id:4,
             txt1:'소스코드:',
-            txt2:'https://github.com/eunyyi/main/tree/diptique'
+            txt2:'https://github.com/eunyyi/project.github.io'
         },
         {
             id:5,
             txt1:'배포링크:',
-            txt2:'http://eunyi-developer.com/릴리바이레드/'
+            txt2:'https://eunyyi.github.io/project.github.io/'
         }
     ]
     return(
@@ -79,8 +80,10 @@ export const Page12 = () => {
                         </div>)
                     }
                 </TxtDiv>
-                <ExportImg src={Export} style={{top:'327px', right:'59px'}} 
-                onClick={()=>window.open("http://eunyi-developer.com/%eb%a6%b4%eb%a6%ac%eb%b0%94%ec%9d%b4%eb%a0%88%eb%93%9c/","_black")}/>
+                <ExportImg src={Export} style={{top:'255px', right:'40px'}} 
+                onClick={()=>window.open("https://github.com/eunyyi/project.github.io","_black")}/>
+                <ExportImg src={Home} style={{width:'40px', top:'325px', right:'50px'}} 
+                onClick={()=>window.open("https://eunyyi.github.io/project.github.io/","_black")}/>
             </Cons>
         </Bg11>
     );

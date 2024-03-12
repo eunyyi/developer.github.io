@@ -4,6 +4,7 @@ import { Txt } from "./page4";
 import Monitor from "../images/monitor.png";
 import Page11 from "../images/page11.png";
 import Export from "../images/export.png";
+import Home from "../images/homepage.svg";
 
 const Bg4 = styled.div`
     width: 100%;
@@ -94,7 +95,9 @@ export const Page5 = () => {
                         </div>)
                     }
                 </TxtDiv>
-                <ExportImg src={Export} style={{top:'327px', right:'109px'}} 
+                <ExportImg src={Export} style={{top:'258px', right:'25px'}} 
+                onClick={()=>window.open("https://github.com/eunyyi/main/tree/diptique","_black")}/>
+                <ExportImg src={Home} style={{width:'40px', top:'325px', right:'98px'}} 
                 onClick={()=>window.open("http://eunyi-developer.com/%eb%94%a5%ed%8b%b0%ed%81%ac/","_black")}/>
             </Cons>
         </Bg4>
